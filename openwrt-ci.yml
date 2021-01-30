@@ -78,6 +78,12 @@ jobs:
           CONFIG_KERNEL_BUILD_DOMAIN="Azure"
           EOF
 
+          cat >> .config <<EOF
+          CONFIG_TARGET_ramips=y
+          CONFIG_TARGET_ramips_mt7621=y
+          CONFIG_TARGET_ramips_mt7621_DEVICE_xiaomi_mir3g=y
+          EOF
+
           #
           # ===============================================================
           # 
